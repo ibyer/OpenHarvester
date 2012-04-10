@@ -1,0 +1,7 @@
+OpenUserHarvester is a Python GAE Application that automatically loads user data/posts from Facebook, Twitter, Yelp.
+
+You can use it to load periodic data from user accounts and aggregate and homogenize the user's data. 
+
+Step 1: Update the config.py with your App data for FB and Twitter.
+Step 2: Initialize Google App Engine and initialize database.
+Step 3: Have fun.
