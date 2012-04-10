@@ -1,0 +1,24 @@
+application: zerson1
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /auth/.*
+  script: testing/oauth_test.py
+
+- url: /loaddummydata
+  script: testing/load_dummy_data.py
+  
+- url: /load_fb_data
+  script: testing/facebook_pull_data.py
+  
+- url: /initial_harvest
+  script: testing/tester.py
+  
+- url: /tasks/uh/.*
+  script: userharvester/task_handler.py
+  login: admin
+  
+builtins:
+- datastore_admin: on

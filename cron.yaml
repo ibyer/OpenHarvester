@@ -1,0 +1,13 @@
+cron:
+- description: daily post harvest
+  url: /tasks/uh/initialize?mode=post
+  schedule: every 24 hours
+
+- description: daily review harvest
+  url: /tasks/uh/initialize?mode=review 
+  schedule: every 24 hours
+    
+- description: weekly friend harvest
+  url: /tasks/uh/initialize?mode=friend
+  schedule: every 24 hours
+  

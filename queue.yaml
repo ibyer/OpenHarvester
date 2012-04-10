@@ -1,0 +1,12 @@
+queue:
+- name: default
+  rate: 5/s
+  
+- name: HarvestFacebook
+  rate: 5/s
+  
+- name: HarvestTwitter
+  rate: 5/s
+  
+- name: HarvestYelp
+  rate: 5/s
